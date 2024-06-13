@@ -17,16 +17,16 @@ class ProfileController extends Controller
             'age'  => $age,
         ];
 
-        // Set cookie variables
+        // Set cookie values
         $name = 'access_token';
         $value = '123-XYZ';
         $minutes = 1;
-        $path = '/hello';
+        $path = '/';
         $domain = $_SERVER['SERVER_NAME'];
         $secure = false;
         $httpOnly = true;
 
-        // Create the cookie
+        // store in a variable
         $cookie = cookie(
             $name,
             $value,

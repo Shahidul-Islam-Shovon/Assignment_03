@@ -5,4 +5,4 @@ use Illuminate\Support\Facades\Route;
 
 
 
-Route::get('/hello/{id}', [ProfileController::class, 'index']);
+Route::get('/profile/{id}', [ProfileController::class, 'index']);
